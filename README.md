@@ -10,7 +10,7 @@ Project is made entirely for fun just to play with Python.
 ### Parameters/values:
 
 ``precision`` is amount of articles that are "read" for each language.  
-``languages`` are languages that you provide to brain (language that brain needs to learn). Provide them as ``brain.Language``.
+``languages`` are languages that you provide to brain (language that brain needs to learn). Provide them as ``brain.Language``.  
 ``data_size`` is minimum size of single article (minimum amount of letters of article) to read it.  
 
 ### Usage:
