@@ -21,6 +21,8 @@ Here's quick guide of usage:
 * Now create new brain via ``brain.Brain(precision, languages, data_size (optional))`` *(Please note languages are in brain.Lanugages format!)*;
 * Now you can guess the language by ``brain.guess(text)``;
 
+Project *(probably)* works only on only latin based languages.
+
 ### brain.Languages
 
 brain.Languages is module for getting correct languages. It also has default languages stored in ``src\languages.txt`` (which you can modify. *Format is language name-ISO-639-1*). To create new languages set simply make new brain.Languages bia ``brain.Languages(languages)``, where languages that you pass doesn't need to exist - they can be incorrect, module will detect languages that only exists in ``src\languages.txt``.
