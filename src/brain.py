@@ -49,7 +49,7 @@ class Brain:
         page = wikipedia.random()
         try:
             text = wikipedia.page(page).content
-        except wikipedia.exceptions.DisambiguationError as e:
+        except wikipedia.exceptions as e:
             # If the page name is ambiguous, try again
             return self.load_data(language)
         # get only articles that are long enough
