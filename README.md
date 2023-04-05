@@ -1,6 +1,6 @@
 # Python language detector
 
-It's simple project - actually refactored in one day project that I made for one of my classes. It uses statistics to detect language. 
+It's simple project - actually refactored in *one day* project that I've made for one of my classes. It uses statistics to detect language. 
 Project uses:
 * wikipedia API;
 * numpy;
