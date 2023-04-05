@@ -21,7 +21,7 @@ Here's quick guide of usage:
 * Now create new brain via ``brain.Brain(precision, languages, data_size (optional))`` *(Please note languages are in brain.Lanugages format!)*;
 * Now you can guess the language by ``brain.guess(text)``;
 
-Project *(probably)* works only on only latin based languages.
+Project *(probably)* works only on latin based languages.
 
 ### brain.Languages
 
