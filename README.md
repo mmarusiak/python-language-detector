@@ -6,6 +6,7 @@ Project uses:
 * numpy;
 
 Project is made entirely for fun just to play with Python.
+![testdetect](https://user-images.githubusercontent.com/20907620/230407040-33bf9918-ec4c-4443-a6e8-29ac3cc72d48.gif)
 
 ### Parameters/values:
 
