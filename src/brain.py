@@ -79,7 +79,7 @@ class Brain:
         return param_letters
 
     def get_articles(self):
-        return [[a[0].__str__() + ' : ' + a[2].__str__() + "\n"] for a in self.data_set]
+        return [[a[0].__str__() + ' : ' + a[2].__str__()] for a in self.data_set]
 
     @staticmethod
     def dist(a, b):
