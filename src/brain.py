@@ -37,7 +37,7 @@ class Brain:
     data_set = []
     min_data_size = 250
 
-    def __init__(self, precision, languages, data_size = 250):
+    def __init__(self, precision, languages, data_size=250):
         self.precision = precision
         self.languages = languages
         self.min_data_size = data_size
@@ -49,7 +49,7 @@ class Brain:
         page = wikipedia.random()
         try:
             text = wikipedia.page(page).content
-        except wikipedia.exceptions as e:
+        except wikipedia.exceptions.DisambiguationError as e:
             # If the page name is ambiguous, try again
             return self.load_data(language)
         # get only articles that are long enough
@@ -60,7 +60,7 @@ class Brain:
     def load_data_set(self):
         # load data set - load each data for language and parametrize it
         for language in self.languages.langs:
-            new_set = [language, []]
+            new_set = [language, [], []]
             i = 0
             articles = ''
             while i < self.precision:
@@ -68,6 +68,7 @@ class Brain:
                 articles += article
                 i += 1
             new_set[1] = (self.parametrization(articles))
+            new_set[2] = articles
             self.data_set.append(new_set)
 
     @staticmethod
@@ -76,6 +77,9 @@ class Brain:
         num_letters = [text.count(chr(i+97)) for i in range(ord('z') - ord('a') + 1)]
         param_letters = [num_letters[i]/sum(num_letters) * 100 for i in range(ord('z') - ord('a') + 1)]
         return param_letters
+
+    def get_articles(self):
+        return [[a[0].__str__() + ' : ' + a[2].__str__() + "\n"] for a in self.data_set]
 
     @staticmethod
     def dist(a, b):

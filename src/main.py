@@ -16,7 +16,6 @@ def test_set():
                          'system.'))
 
 
-
 def user_playground():
     languages = input("Please enter all languages you want to consider (all languages that brain needs to \"learn\") "
                       "(separate them with space):")
@@ -41,8 +40,16 @@ def user_playground():
         user_brain = brain.Brain(precision, brain_languages)
 
     print(user_brain.guess(input("Enter text to guess:")))
+    # print_articles(user_brain)
 
 
-#test_set()
+def print_articles(b):
+    arts = b.get_articles()
+    for art in arts:
+        print(art)
+
+
+# test_set()
+
 user_playground()
 
