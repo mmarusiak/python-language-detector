@@ -1,12 +1,11 @@
-# Python language detector
+<h2 align="center">
+Python language detector
+</h2>
+<h4 align="center">
+Project made entirely for fun.  
 
-It's simple project - actually refactored in *one day* project that I've made for one of my classes. It uses statistics to detect language. 
-Project uses:
-* wikipedia API;
-* numpy;
-
-Project is made entirely for fun just to play with Python.
-![testdetect](https://user-images.githubusercontent.com/20907620/230407040-33bf9918-ec4c-4443-a6e8-29ac3cc72d48.gif)
+![textdetect](https://user-images.githubusercontent.com/20907620/230876982-855a69db-b618-432d-9d3b-3adf86ab0fd7.gif)
+</h4>
 
 ### Parameters/values:
 
@@ -23,6 +22,9 @@ Here's quick guide of usage:
 * Now you can guess the language by ``brain.guess(text)``;
 
 Project *(probably)* works only on latin based languages.
+
+Project uses wiki API and numpy.
+
 
 ### brain.Languages
 
